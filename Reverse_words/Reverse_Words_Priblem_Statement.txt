@@ -1,0 +1,10 @@
+WAP to reverse the words in a given string.
+
+Eg I am a developer at Flipkart
+
+Output: Flipkart at developer a am I
+
+
+Approach: 1.Reverse the whole string.
+2.Now reverse the individual words.
+

@@ -1,0 +1,6 @@
+Given a 4 X 4 game slot that has random alphabets in all the slots 
+Write a function that takes the keyboard and the word as input and returns true if the word can be formed 
+False otherwise. 
+
+A word can be formed on the board by connecting alphabets adjacent to each other (horizontal, vertical and diagonally) 
+Same alphabet should not be reused.
