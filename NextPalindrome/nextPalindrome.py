@@ -26,5 +26,5 @@ def smallestGreaterPalindrome(number):
 
 n = int(raw_input())
 for i in xrange(0,n):
-	num = int(raw_input())
+	num = raw_input()
 	print smallestGreaterPalindrome(num)

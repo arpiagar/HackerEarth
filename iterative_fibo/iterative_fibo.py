@@ -17,4 +17,4 @@ def fibo(n):
     return a
 #fibo(0)
 #fibo(1)
-fibo(100)
+fibo(3)
