@@ -9,3 +9,6 @@ def remove_repeated(input_string):
 
 print remove_repeated("aaasjbfkhbgejhvsassadfsva")
 print remove_repeated("aaabbbcccaaann")
+
+
+def 
