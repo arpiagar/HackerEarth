@@ -1,0 +1,3 @@
+> /Users/aagarwal/code/booking/HackerEarth/postcode_range.py(25)increment_word()
+-> idx = len(word)-1
+(Pdb) 

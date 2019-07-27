@@ -6,11 +6,12 @@ def check_row_and_col(board):
 		for j in xrange(0, len(board[0])):
 			elem_row =  board[i][j]
 			elem_col =  board[j][i]
-			if board[i][j] != ".":
+			if elem_row != ".":
 				if row_map.has_key(elem_row):
 					return False
 				else:
 					row_map[elem_row] =  1
+                        if elem_col != ".":
 				if col_map.has_key(elem_col):
 					return False
 				else:
