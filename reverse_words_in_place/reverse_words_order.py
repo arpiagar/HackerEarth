@@ -1,11 +1,11 @@
 #
 # Function which array of chars and do word wise reverse, in-place
 # input : "This is a test", is modified to "test a is This"
-# 
+#
 # tset a si siht
-# test a is 
-# ['T', 'h', 'i', 's',...'] 
-# 
+# test a is
+# ['T', 'h', 'i', 's',...']
+#
 
 def rev(start,end,input_string):
     n = (end-start+1)/2
@@ -13,7 +13,7 @@ def rev(start,end,input_string):
         temp = input_string[start+i]
         input_string[start+i] = input_string[end-i]
         input_string[end-i] = temp
-    
+
 
 def reverse(input_string):
     n = len(input_string)
@@ -33,11 +33,11 @@ def reverse(input_string):
         count += 1
     rev(start,start+i-1, input_string)
     return input_string
-    
-    
-if __name__ == "__main__":
-    print reverse([x for x in "This is a test"])
-    print reverse([x for x in "Are you sure?"])
-    
 
-  
+
+if __name__ == "__main__":
+    print reverse([x for x in " This is a test "])
+    print reverse([x for x in "Are you sure?"])
+
+
+
