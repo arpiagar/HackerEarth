@@ -1,0 +1,21 @@
+import math
+def numberOfWays(n):
+    count = n//3
+    num_ways = 0
+    for i in range(0, count+1):
+        count_of_threes = i
+        count_of_ones = n - count_of_threes * 3
+        num_ways += ncr((count_of_ones+count_of_threes), count_of_threes)
+    return num_ways % 1000000007
+    # Write your code here
+
+def ncr(n,r):
+    f = math.factorial
+    return f(n)//(f(r)*f(n-r))
+
+if __name__ == "__main__":
+    for i in range(1, 11):
+        print(numberOfWays(i))
+    #print(numberOfWays(7))
+    #print(numberOfWays(1))
+    #print(numberOfWays(9))
