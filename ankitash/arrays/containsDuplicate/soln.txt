@@ -33,7 +33,7 @@ class Solution {
                 existanceMap.put(nums[i], true);
             }
         }
-        return true;
+        return false;
     }
 }
 
