@@ -1,0 +1,48 @@
+// https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/646/
+
+
+// Soln 1
+
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int temp;
+        while (k > 0) {
+            temp = nums[nums.length-1];
+            for (int i = nums.length-1; i > 0; i--) {
+                nums[i] = nums[i-1];
+            }
+            nums[0] = temp;
+            k--;
+        }
+    }
+}
+
+
+// Soln 2
+
+class Solution {
+    public void rotate(int[] nums, int k) {
+        
+        k = k % nums.length;
+        reverse(nums, 0, nums.length-1);
+        reverse(nums, 0, k-1);
+        reverse(nums, k, nums.length-1);
+        
+    }
+    
+    void reverse(int[] arr, int start, int end) {
+        
+        int temp;
+        int last = end;
+        int beg = start;
+        
+        while (last > beg) {
+            temp = arr[last];
+            arr[last] = arr[beg];
+            arr[beg] = temp;
+            
+            last--;
+            beg++;
+        }
+    }
+}
